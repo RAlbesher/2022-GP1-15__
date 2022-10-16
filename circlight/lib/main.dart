@@ -7,6 +7,8 @@ import 'package:xd4/ManageStudent.dart';
 import 'package:xd4/Reassign.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:xd4/create_parent_profile.dart';
+import 'package:xd4/create_student_account1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Reassign(),
+      home: CreateStudentAccount1(),
     );
   }
 }
