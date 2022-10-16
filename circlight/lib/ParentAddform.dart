@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
               children: [
                 SizedBox(height: height * 0.04),
                 Text(
-                  "إنشاء حساب ولي الامر ",
+                  "                            إنشاء حساب ولي الامر ",
                   textAlign: TextAlign.right,
                   style: TextStyle(fontSize: 20, color: Color(0xFF363f93)),
                 ),
@@ -39,12 +39,13 @@ class _HomeState extends State<Home> {
                 ),
                 TextFormField(
                   //to take text from user input
-                  decoration: InputDecoration(labelText: "اسم ولي الامر"),
+                  textAlign: TextAlign.right,
+                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
                   validator: (value) {
                     if (value!.isEmpty)
                       return "Please Enter a the empty fields ";
                     else {
-                      return null;
+                      return value;
                     }
                   },
                 ),
@@ -53,12 +54,13 @@ class _HomeState extends State<Home> {
                 ),
                 TextFormField(
                   //to take text from user input
-                  decoration: InputDecoration(labelText: "اسم ولي الامر"),
+                  textAlign: TextAlign.right,
+                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
                   validator: (value) {
                     if (value!.isEmpty)
                       return "Please Enter a the empty fields ";
                     else {
-                      return null;
+                      return value;
                     }
                   },
                 ),
@@ -67,12 +69,13 @@ class _HomeState extends State<Home> {
                 ),
                 TextFormField(
                   //to take text from user input
-                  decoration: InputDecoration(labelText: "اسم ولي الامر"),
+                  textAlign: TextAlign.right,
+                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
                   validator: (value) {
                     if (value!.isEmpty)
                       return "Please Enter a the empty fields ";
                     else {
-                      return null;
+                      return value;
                     }
                   },
                 )
