@@ -4,8 +4,8 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:circlight/ManageParent.dart';
 import 'package:adobe_xd/adobe_xd.dart';
-import 'package:circlight/ManageStudent.dart';
-import 'package:circlight/Reassign.dart';
+import 'package:xd4/ManageStudent.dart';
+import 'package:xd4/Reassign.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:circlight/create_parent_profile.dart';
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: CreateStudentAccount1(),
+      home: Home(),
     );
   }
 }
