@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
+class ParentAddform extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _ParentAddForm createState() => _ParentAddForm();
 }
 
-class _HomeState extends State<Home> {
+class _ParentAddForm extends State<ParentAddform> {
   final formKey = GlobalKey<FormState>(); //key for form
   String name = "";
   @override
@@ -25,61 +25,139 @@ class _HomeState extends State<Home> {
           padding: const EdgeInsets.only(left: 40, right: 40),
           child: Form(
             key: formKey, //key for form
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(height: height * 0.04),
-                Text(
-                  "                            إنشاء حساب ولي الامر ",
-                  textAlign: TextAlign.right,
-                  style: TextStyle(fontSize: 20, color: Color(0xFF363f93)),
-                ),
-                SizedBox(
-                  height: height * 0.05,
-                ),
-                TextFormField(
-                  //to take text from user input
-                  textAlign: TextAlign.right,
-                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
-                  validator: (value) {
-                    if (value!.isEmpty)
-                      return "Please Enter a the empty fields ";
-                    else {
-                      return value;
-                    }
-                  },
-                ),
-                SizedBox(
-                  height: height * 0.05,
-                ),
-                TextFormField(
-                  //to take text from user input
-                  textAlign: TextAlign.right,
-                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
-                  validator: (value) {
-                    if (value!.isEmpty)
-                      return "Please Enter a the empty fields ";
-                    else {
-                      return value;
-                    }
-                  },
-                ),
-                SizedBox(
-                  height: height * 0.05,
-                ),
-                TextFormField(
-                  //to take text from user input
-                  textAlign: TextAlign.right,
-                  decoration: InputDecoration(hintText: "اسم ولي الامر"),
-                  validator: (value) {
-                    if (value!.isEmpty)
-                      return "Please Enter a the empty fields ";
-                    else {
-                      return value;
-                    }
-                  },
-                )
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: height * 0.04),
+                  Text(
+                    "                           إنشاء حساب ولي الامر ",
+                    textAlign: TextAlign.right,
+                    style: TextStyle(fontSize: 20, color: Color(0xFF363F93)),
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "اسم ولي الامر"),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "اسم المستخدم"),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "البريد الالكتروني "),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration:
+                        InputDecoration(hintText: "رقم الهوية /الإقامة"),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "الجنسية"),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "الوظيفة "),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "رقم الجوال"),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  TextFormField(
+                    //to take text from user input
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(hintText: "رقم جوال آخر "),
+                    validator: (value) {
+                      if (value!.isEmpty)
+                        return "Please Enter a the empty fields ";
+                      else {
+                        return value;
+                      }
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ));
