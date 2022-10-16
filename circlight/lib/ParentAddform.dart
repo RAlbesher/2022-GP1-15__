@@ -147,7 +147,9 @@ class _ParentAddForm extends State<ParentAddform> {
                   TextFormField(
                     //to take text from user input
                     textAlign: TextAlign.right,
-                    decoration: InputDecoration(hintText: "رقم جوال آخر "),
+                    decoration: InputDecoration(
+                      hintText: "رقم جوال آخر ",
+                    ),
                     validator: (value) {
                       if (value!.isEmpty)
                         return "Please Enter a the empty fields ";
@@ -156,6 +158,32 @@ class _ParentAddForm extends State<ParentAddform> {
                       }
                     },
                   ),
+                  /*  OutlinedButton(
+                      child: Text("إضافه"),
+                      onPressed: () {},
+                      style: ButtonStyle(
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15),
+                                      side: BorderSide(
+                                          color: Color.fromARGB(
+                                              255, 54, 187, 244))))))*/
+                  Container(
+                    child: Align(
+                        alignment: Alignment.center,
+                        child: ElevatedButton(
+                          child: Text("          إضافه        "),
+                          onPressed: () => print("it's pressed"),
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 54, 165, 244),
+                            onPrimary: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(32.0),
+                            ),
+                          ),
+                        )),
+                  )
                 ],
               ),
             ),
