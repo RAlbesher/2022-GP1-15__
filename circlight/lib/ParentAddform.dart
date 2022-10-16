@@ -47,6 +47,34 @@ class _HomeState extends State<Home> {
                       return null;
                     }
                   },
+                ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                TextFormField(
+                  //to take text from user input
+                  decoration: InputDecoration(labelText: "اسم ولي الامر"),
+                  validator: (value) {
+                    if (value!.isEmpty)
+                      return "Please Enter a the empty fields ";
+                    else {
+                      return null;
+                    }
+                  },
+                ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                TextFormField(
+                  //to take text from user input
+                  decoration: InputDecoration(labelText: "اسم ولي الامر"),
+                  validator: (value) {
+                    if (value!.isEmpty)
+                      return "Please Enter a the empty fields ";
+                    else {
+                      return null;
+                    }
+                  },
                 )
               ],
             ),
