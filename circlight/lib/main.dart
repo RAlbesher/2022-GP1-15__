@@ -1,14 +1,15 @@
+import 'package:circlight/create_student_account1.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:xd4/ManageParent.dart';
+import 'package:circlight/ManageParent.dart';
 import 'package:adobe_xd/adobe_xd.dart';
-import 'package:xd4/ManageStudent.dart';
-import 'package:xd4/Reassign.dart';
+import 'package:circlight/ManageStudent.dart';
+import 'package:circlight/Reassign.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:xd4/create_parent_profile.dart';
-import 'package:xd4/create_student_account1.dart';
+import 'package:circlight/create_parent_profile.dart';
+import 'package:circlight/create_student_account1.dart';
 
 void main() {
   runApp(const MyApp());
